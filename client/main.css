@@ -1,0 +1,111 @@
+:root {
+  color-scheme: dark;
+  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+  background: #0d1117;
+  color: #e6edf3;
+}
+
+body {
+  margin: 0;
+}
+
+.demo {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 32px;
+}
+
+.demo-title {
+  margin: 0;
+  font-size: 30px;
+}
+
+.demo-version {
+  margin: 8px 0 0;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 18px;
+  color: #7ee787;
+}
+
+.demo-actions {
+  display: flex;
+  gap: 12px;
+  margin: 28px 0;
+}
+
+.demo-button {
+  padding: 12px 22px;
+  border: 1px solid #2ea043;
+  border-radius: 8px;
+  background: #238636;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.demo-button-secondary {
+  border-color: #30363d;
+  background: #21262d;
+}
+
+.demo-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.demo-column {
+  min-height: 260px;
+  padding: 20px;
+  border: 1px solid #30363d;
+  border-radius: 12px;
+  background: #161b22;
+}
+
+.demo-column-title {
+  margin: 0;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 22px;
+}
+
+.demo-column-note {
+  margin: 6px 0 18px;
+  color: #8b949e;
+}
+
+.demo-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 20px;
+  border-radius: 10px;
+  border: 1px solid #30363d;
+  background: #0d1117;
+}
+
+.demo-card-text {
+  margin: 0;
+  font-size: 24px;
+}
+
+.demo-card-status {
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 16px;
+}
+
+.demo-card-updated .demo-card-status {
+  background: #1f6f3d;
+  color: #aff5b4;
+}
+
+.demo-card-inserted .demo-card-status {
+  background: #6e2d16;
+  color: #ffc4a8;
+}
+
+.demo-empty {
+  color: #8b949e;
+}

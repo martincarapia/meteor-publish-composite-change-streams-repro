@@ -1,0 +1,27 @@
+<head>
+  <title>publish-composite: insert, then update</title>
+</head>
+<body>
+  <main class="demo">
+    <header class="demo-header">
+      <h1 class="demo-title">Insert a document, then update it right away</h1>
+      <p class="demo-version" id="demo-version"></p>
+    </header>
+    <section class="demo-actions">
+      <button type="button" id="send" class="demo-button">Insert, then update</button>
+      <button type="button" id="clear" class="demo-button demo-button-secondary">Clear</button>
+    </section>
+    <section class="demo-columns">
+      <article class="demo-column" id="plain-column">
+        <h2 class="demo-column-title">Meteor.publish</h2>
+        <p class="demo-column-note">Same cursor, no children</p>
+        <div class="demo-list" id="plain-list"></div>
+      </article>
+      <article class="demo-column" id="composite-column">
+        <h2 class="demo-column-title">publishComposite</h2>
+        <p class="demo-column-note">Same cursor, one child (the author)</p>
+        <div class="demo-list" id="composite-list"></div>
+      </article>
+    </section>
+  </main>
+</body>

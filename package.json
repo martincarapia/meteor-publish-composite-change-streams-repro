@@ -1,0 +1,14 @@
+{
+  "name": "meteor-publish-composite-change-streams-repro",
+  "private": true,
+  "description": "Reproduction for Meteor-Community-Packages/meteor-publish-composite#195: updates dropped on Meteor 3.5+ change streams",
+  "license": "MIT",
+  "scripts": {
+    "start": "meteor run --settings settings.json",
+    "start:fix": "(test -d .fix/publish-composite || git clone --depth 1 --branch fix/changed-before-added https://github.com/martincarapia/meteor-publish-composite.git .fix/publish-composite) && METEOR_PACKAGE_DIRS=\"$PWD/.fix\" METEOR_LOCAL_DIR=.meteor/local-fix meteor run --port 3100 --settings settings.fix.json"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.23.5",
+    "meteor-node-stubs": "^1.2.30"
+  }
+}
