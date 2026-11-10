@@ -42,7 +42,7 @@ meteor npm start
 meteor npm run start:fix
 ```
 
-`start:fix` clones the PR branch into `.fix/publish-composite` and loads it through `METEOR_PACKAGE_DIRS`, so it overrides the published package. It uses its own `METEOR_LOCAL_DIR` and port, so both versions can run at the same time.
+`start:fix` clones the PR branch into `.fix/publish-composite` and loads it through `METEOR_PACKAGE_DIRS`, so it overrides the published package. It uses its own `METEOR_LOCAL_DIR` and port, so both versions can run at the same time. If a port is taken, add `-- --port <port>`, for example `meteor npm start -- --port 3200`.
 
 ## What to expect
 
